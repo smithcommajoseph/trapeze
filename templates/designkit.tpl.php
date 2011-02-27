@@ -8,11 +8,11 @@
 .dropdown-blocks .block-toggle .item-list li a:focus,
 .pager li.pager-current,
 .more-link a:hover,
-#global,
-#navigation { background-color:<?php print $background ?>; }
+#global { background-color:<?php print $background ?>; }
+/*removed #navigation*/
 
-body #space-tools .block-title,
-body #features-menu li { background-color:<?php print designkit_colorshift($background, '#000000', .3) ?>; }
+body #space-tools .block-title{ background-color:<?php print designkit_colorshift($background, '#000000', .3) ?>; }
+/* removed body #features-menu li*/
 
 body #header .block-widget .block-content,
 body #header .block .block-title { background-color:<?php print designkit_colorshift($background, '#000000', .15) ?>; }

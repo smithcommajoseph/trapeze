@@ -1,14 +1,8 @@
 
 body.trapeze #header {
 	float:right;
-	
 }
-body.trapeze #header #block-atrium-account{ 
-	float:right;
-	display:block;
-	width:550px;
-	}
-body.trapeze #header #block-atrium-account .block-title{ 
+body.trapeze #header .block{ 
 	float:right;
 	}
 body.trapeze #header.toggle-blocks #block-atrium-account{ 
@@ -16,10 +10,47 @@ body.trapeze #header.toggle-blocks #block-atrium-account{
 	}
 body.trapeze #header.toggle-blocks .block-toggle .block-content{ 
 	position: absolute;
+	left: auto;
+	right: 5px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 0px; 
-	top: 30px;
+	} 
+
+/*Removed from designkit*/
+#navigation{ 
+	background: #eee url(../images/sprite_skin.png);
+	background-position: 0px -40px;
+	background-repeat: repeat-x;
 	}
+body #space-tools .block-title,
+body #features-menu li.active { 
+	background-color:#fff;
+	}
+
+body #space-tools .block-title{ 
+	text-indent: -9999px;
+	width:20px;
+	border: 1px solid #ddd;
+	background-image: url(../images/sprite_skin.png);
+	background-position: 0px -210px;
+	background-repeat: repeat-x;
+	}
+body #space-tools .block-title.toggle-active{ 
+	background-image: none;
+	border-bottom-color: transparent;
+	}
+
+body #space-tools .dropdown-blocks .block-toggle .block-content{ 
+	right:1px;
+	}
+
+#block-atrium-admin_links span.icon,
+#block-atrium-admin_links .toggle-active span.icon 	{ background-position:-20px -420px; }
+#block-atrium-create span.icon,
+#block-atrium-create .toggle-active span.icon 		{ background-position:0px -420px; }
+#block-atrium-search span.icon,
+#block-atrium-search .toggle-active span.icon 		{ background-position:-40px -420px; }
+
 
 /**
  * Feature nav overrides
@@ -34,8 +65,9 @@ body.trapeze #header.toggle-blocks .block-toggle .block-content{
 	background-position:0px 50px;
 	background-repeat:no-repeat;
 	margin-left:5px; 
-	border-radius: 5px !important;
-	-moz-border-radius: 5px !important;
+	border: 1px solid transparent !important;
+	border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
 
 	}
 
@@ -43,6 +75,7 @@ body.trapeze #header.toggle-blocks .block-toggle .block-content{
 	border:0;
 	border-bottom:0px;
 	height: auto;
+	border: 1px solid #ddd !important;
 	}
 
 #features-menu li a {
@@ -50,7 +83,7 @@ body.trapeze #header.toggle-blocks .block-toggle .block-content{
 	position:relative;
 	width: auto;
 	height: 20px;
-	padding: 5px 5px 5px 6px;
+	padding: 8px;
 	overflow:hidden;
 	background: transparent;
 	line-height: 1em;
@@ -63,7 +96,7 @@ body.trapeze #header.toggle-blocks .block-toggle .block-content{
 
 #features-menu li.active a,
 #features-menu li.active a.active {
-	padding: 4px 10px 5px;
+	padding: 8px;
 	width:auto;
 	}
 
@@ -72,20 +105,22 @@ body.trapeze #header.toggle-blocks .block-toggle .block-content{
 	position: relative;
 	top:0px;
 	left:0px;
-	white-space:nowrap;
-	text-align:center;
-	font-size: 11px;
-	font-weight: bold;
 	display:block; 
 	padding-left: 20px; 
-	margin-left: 4px; 
+	white-space:nowrap;
+	text-align:center;
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 4px;
+	color: #888;
+	text-shadow: white 0px 1px 0px;
 	line-height: 1.9em;
 	}
 
 #features-menu li.active a span.label,
 #features-menu li.active a:hover span.label {
-	color: #888;
-	font-size: 11px;
+	color: #333;
+	font-size: 12px;
 	font-weight: bold;
 	margin-right: 0px;
 	padding: 0 0 0 0px;

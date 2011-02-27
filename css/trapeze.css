@@ -1,6 +1,8 @@
 
 body.trapeze #header {
-    float: right;
+	float: right;
+	position: absolute;
+	right:20px;
 }
 
 body.trapeze #header.toggle-blocks .block-toggle .block-content{ 

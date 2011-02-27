@@ -11,7 +11,8 @@
 #global { background-color:<?php print $background ?>; }
 /*removed #navigation*/
 
-body #space-tools .block-title{ background-color:<?php print designkit_colorshift($background, '#000000', .3) ?>; }
+/*body #space-tools .block-title{ background-color:<?php print designkit_colorshift($background, '#000000', .3) ?>; }
+*/
 /* removed body #features-menu li*/
 
 body #header .block-widget .block-content,
